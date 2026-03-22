@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Krishna | Portfolio</title>
+    <meta name="description"
+        content="Professional Portfolio of Arjun Krishna - Video Editor, Videographer, and Engineering Student.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#" class="logo">XRJ</a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Work</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <video autoplay loop muted playsinline class="hero-video">
+                <!-- Pointing to a local video file. Please save your downloaded Instagram video as "hero-bg.mp4" in this folder! -->
+                <source src="hero-bg.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">ARJUN KRISHNA</h1>
+                <p class="hero-subtitle" style="font-size: 1.5rem; margin-top: 10px; margin-bottom: 15px;">I am a <span
+                        class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                <p class="hero-bio"
+                    style="font-size: 0.95rem; max-width: 600px; margin-bottom: 30px; color: var(--text-secondary); line-height: 1.6;">
+                    A passionate creative blending analytical problem-solving with cinematic visual storytelling to
+                    craft striking digital aesthetics and compelling videos.</p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <p>Scroll to explore</p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2>About Me</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text fade-up delay-1">
+                        <p>Hi, I’m Arjun Krishna, a<strong> Computer Science and Engineering</strong> student with a
+                            strong passion for
+                            creativity and technology. I enjoy combining technical knowledge with artistic skills to
+                            create meaningful digital experiences.
+
+                            Alongside my studies, I’m deeply interested in <strong>videography</strong> and
+                            <strong>video editing</strong>, where I love
+                            capturing moments and turning them into engaging visual stories. I also have a keen interest
+                            in graphic design, including creating posters and logos that are both visually appealing and
+                            impactful.
+                        </p>
+
+                        <p>I’m always eager to learn new tools, improve my skills, and take on creative challenges that
+                            help me grow. My goal is to blend technology and creativity to build work that stands out
+                            and connects with people.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-num">50+</span>
+                                <span class="stat-text">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">3+</span>
+                                <span class="stat-text">Years Editing</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">1M+</span>
+                                <span class="stat-text">Views Generated</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual fade-up delay-2">
+                        <div class="profile-container">
+                            <div class="profile-glow"></div>
+                            <!-- Ensure your photo is saved exactly as profile.jpg in the workspace folder! -->
+                            <img src="profile.jpg" alt="Arjun Krishna" class="profile-img">
+                            <div class="floating-badge badge-edit">
+                                <i class="fas fa-film"></i> Editor
+                            </div>
+                            <div class="floating-badge badge-tech">
+                                <i class="fas fa-code"></i> Engineering
+                            </div>
+                            <div class="floating-badge badge-art">
+                                <i class="fas fa-video"></i> Videography
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2>Recent Work</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="filter-btns fade-up delay-1">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="video">Videography</button>
+                    <button class="filter-btn" data-filter="edit">Editing</button>
+                    <button class="filter-btn" data-filter="engineering">Engineering</button>
+                </div>
+                <div class="portfolio-grid fade-up delay-2">
+                    <!-- Item 1 -->
+                    <div class="portfolio-item video edit">
+                        <div class="item-inner">
+                            <div class="visual-side">
+                                <video autoplay loop muted playsinline
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                    <source src="dtd.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item-details">
+                                <div class="details-content">
+                                    <h3>DTD Project</h3>
+                                    <p>Comprehensive videography and high-end cinematic editing tailored for visual
+                                        impact and narrative depth.</p>
+                                    <a href="javascript:void(0)" class="item-link watch-btn" data-video="dtd.mp4"><i
+                                            class="fas fa-play"></i> Watch Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="portfolio-item video edit">
+                        <div class="item-inner">
+                            <div class="visual-side">
+                                <video autoplay loop muted playsinline
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                    <source src="get.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item-details">
+                                <div class="details-content">
+                                    <h3>Destroy the Decibel Season 3</h3>
+                                    <p>A dynamic and engaging video showcase featuring advanced pacing and visual
+                                        effects.</p>
+                                    <a href="javascript:void(0)" class="item-link watch-btn" data-video="get.mp4"><i
+                                            class="fas fa-play"></i> Watch Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="portfolio-item video edit">
+                        <div class="item-inner">
+                            <div class="visual-side">
+                                <video autoplay loop muted playsinline
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                    <source src="farewellintro.MOV" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item-details">
+                                <div class="details-content">
+                                    <h3>Farewell Intro</h3>
+                                    <p>A beautiful, cinematic introduction designed to capture emotional depth and leave
+                                        a lasting impression.</p>
+                                    <a href="javascript:void(0)" class="item-link watch-btn"
+                                        data-video="farewellintro.MOV"><i class="fas fa-play"></i> Watch Intro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="portfolio-item video edit">
+                        <div class="item-inner">
+                            <div class="visual-side">
+                                <video autoplay loop muted playsinline
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                    <source src="christmania.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item-details">
+                                <div class="details-content">
+                                    <h3>Christmania</h3>
+                                    <p>An explosive and immersive event highlight loop engineered to capture high-energy
+                                        moments flawlessly.</p>
+                                    <a href="javascript:void(0)" class="item-link watch-btn"
+                                        data-video="christmania.mp4"><i class="fas fa-play"></i> Watch Real</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-more-container fade-up delay-1" style="text-align: center; margin-top: 60px;">
+                    <a href="#" class="btn btn-secondary"
+                        style="padding: 16px 40px; font-size: 1.1rem; border-radius: 50px; background: rgba(255,255,255,0.05); transition: all 0.3s; box-shadow: 0 0 20px rgba(255,0,0,0.1);">
+                        <i class="fas fa-plus" style="margin-right: 10px;"></i> Show More Works
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2>Expertise</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="skills-wrapper">
+                    <div class="skill-category fade-up delay-1">
+                        <h3><i class="fas fa-film"></i> Creative</h3>
+                        <div class="skill-tags">
+                            <span>Premiere Pro</span>
+                            <span>After Effects</span>
+                            <span>DaVinci Resolve</span>
+                            <span>Cinematography</span>
+                            <span>Color Grading</span>
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-up delay-2">
+                        <h3><i class="fas fa-laptop-code"></i> Engineering</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>HTML/CSS</span>
+                            <span>SQL</span>
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-box fade-up">
+                    <div class="contact-info">
+                        <h2>Let's build something amazing together.</h2>
+                        <p>Currently open for freelance opportunities and engineering internships.</p>
+                        <div class="socials">
+                            <a
+                                href="https://www.linkedin.com/in/arjun-krishna-4a3893337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/igarjuuuhh-a11y"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/ig.arjuuuhh/"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Arjun Krishna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <span class="close-modal"><i class="fas fa-times"></i></span>
+        <div class="modal-content">
+            <video id="modalVideo" controls playsinline>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- tsParticles Interactive Galaxy Library -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
